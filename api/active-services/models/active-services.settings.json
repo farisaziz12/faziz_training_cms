@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "active_services",
+  "info": {
+    "name": "Active Services",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "service": {
+      "model": "service"
+    },
+    "athlete": {
+      "model": "athlete",
+      "via": "active_services"
+    },
+    "amount_left": {
+      "type": "integer",
+      "required": true
+    },
+    "expiration_date": {
+      "type": "date",
+      "required": true
+    },
+    "activated_date": {
+      "type": "date",
+      "required": true
+    },
+    "buttons": {
+      "collection": "button",
+      "via": "active_services",
+      "dominant": true
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "athletes",
+  "info": {
+    "name": "Athlete",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "date"
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "cart": {
+      "model": "cart"
+    },
+    "active_services": {
+      "via": "athlete",
+      "collection": "active-services"
+    }
+  }
+}

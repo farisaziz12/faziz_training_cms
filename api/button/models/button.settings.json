@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buttons",
+  "info": {
+    "name": "Button",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "services": {
+      "collection": "service",
+      "via": "buttons",
+      "dominant": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "active_services": {
+      "via": "buttons",
+      "collection": "active-services"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "name": "Service",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "display_price": {
+      "type": "string",
+      "required": true
+    },
+    "buttons": {
+      "via": "services",
+      "collection": "button"
+    },
+    "validity_period": {
+      "type": "integer",
+      "required": true
+    },
+    "amount": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

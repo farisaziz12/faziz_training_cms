@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/athletes",
+      "handler": "athlete.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/athletes/count",
+      "handler": "athlete.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/athletes/:id",
+      "handler": "athlete.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/athletes/email/:email",
+      "handler": "athlete.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/athletes",
+      "handler": "athlete.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/athletes/:id",
+      "handler": "athlete.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/athletes/:id",
+      "handler": "athlete.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
