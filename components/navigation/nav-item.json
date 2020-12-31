@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_navigation_nav_items",
+  "info": {
+    "name": "NavItem",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "route": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "authenticated": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "default": "nav-item",
+      "required": true
+    },
+    "hide_for_no_auth": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
