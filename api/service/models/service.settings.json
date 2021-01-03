@@ -37,6 +37,9 @@
     "amount": {
       "type": "integer",
       "required": true
+    },
+    "type": {
+      "type": "string"
     }
   }
 }
