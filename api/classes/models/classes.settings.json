@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "services",
+  "collectionName": "classes",
   "info": {
-    "name": "Service",
+    "name": "Classes",
     "description": ""
   },
   "options": {
@@ -15,32 +15,33 @@
       "type": "string",
       "required": true
     },
-    "price": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "start_time": {
+      "type": "time",
+      "required": true
+    },
+    "location": {
+      "model": "location"
+    },
+    "coach": {
+      "model": "coach"
+    },
+    "end_time": {
+      "type": "time",
+      "required": true
+    },
+    "athletes": {
+      "collection": "athlete"
+    },
+    "capacity": {
       "type": "integer",
-      "required": true
-    },
-    "description": {
-      "type": "text",
-      "required": true
-    },
-    "display_price": {
-      "type": "string",
       "required": true
     },
     "buttons": {
       "collection": "button"
-    },
-    "validity_period": {
-      "type": "integer",
-      "required": true
-    },
-    "amount": {
-      "type": "integer",
-      "required": true
-    },
-    "type": {
-      "type": "string",
-      "required": true
     }
   }
 }

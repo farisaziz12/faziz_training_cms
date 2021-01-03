@@ -15,6 +15,11 @@
       "type": "component",
       "repeatable": true,
       "component": "navigation.nav-item"
+    },
+    "nav_dropdown_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.nav-account-dropdown"
     }
   }
 }

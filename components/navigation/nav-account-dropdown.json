@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_navigation_nav_account_dropdowns",
+  "info": {
+    "name": "NavDropdownItems",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "default": "nav-item",
+      "required": true
+    },
+    "hide_for_no_auth": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "authenticated": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "route": {
+      "type": "string",
+      "default": "/",
+      "required": true
+    }
+  }
+}

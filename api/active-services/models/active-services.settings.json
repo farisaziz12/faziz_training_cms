@@ -31,9 +31,7 @@
       "required": true
     },
     "buttons": {
-      "collection": "button",
-      "via": "active_services",
-      "dominant": true
+      "collection": "button"
     },
     "link": {
       "type": "string"

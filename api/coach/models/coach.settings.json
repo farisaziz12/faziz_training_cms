@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "buttons",
+  "collectionName": "coaches",
   "info": {
-    "name": "Button",
+    "name": "Coach",
     "description": ""
   },
   "options": {
@@ -11,9 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "type": {
-      "type": "string",
-      "required": true
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "buttons",
+  "collectionName": "locations",
   "info": {
-    "name": "Button",
+    "name": "Location",
     "description": ""
   },
   "options": {
@@ -11,9 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "type": {
-      "type": "string",
-      "required": true
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
     }
   }
 }
