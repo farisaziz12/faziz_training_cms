@@ -13,6 +13,11 @@
   "attributes": {
     "cart_items": {
       "collection": "service"
+    },
+    "user": {
+      "via": "cart",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

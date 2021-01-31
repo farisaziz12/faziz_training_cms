@@ -14,8 +14,9 @@
     "data": {
       "type": "json"
     },
-    "athlete": {
-      "model": "athlete"
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

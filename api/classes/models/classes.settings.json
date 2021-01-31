@@ -33,15 +33,16 @@
       "type": "time",
       "required": true
     },
-    "athletes": {
-      "collection": "athlete"
-    },
     "capacity": {
       "type": "integer",
       "required": true
     },
     "buttons": {
       "collection": "button"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

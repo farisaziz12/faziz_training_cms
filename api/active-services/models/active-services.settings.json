@@ -14,10 +14,6 @@
     "service": {
       "model": "service"
     },
-    "athlete": {
-      "model": "athlete",
-      "via": "active_services"
-    },
     "amount_left": {
       "type": "integer",
       "required": true
@@ -35,6 +31,11 @@
     },
     "link": {
       "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "active_services"
     }
   }
 }
